@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Sentiment Analyzer</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+  <div class="wrapper">
+    <div class="card">
+      <h1><i class="fas fa-brain"></i> Sentiment Analyzer</h1>
+      <p>Type a sentence to detect if the sentiment is <span class="bold">Positive</span>, <span class="bold">Negative</span>, or <span class="bold">Neutral</span>.</p>
+      
+      <textarea id="text-input" placeholder="I love the way you explain! 😊"></textarea>
+      <button onclick="analyzeSentiment()"><i class="fas fa-search"></i> Analyze</button>
+      
+      <div id="result-box">
+        <p id="result-text"></p>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
